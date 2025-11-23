@@ -9,13 +9,11 @@ k = 4
 def containsNearbyDuplicate(nums, k: int) -> bool:
     num_map = set()
     for i in range(len(nums)):
-        print(num_map)
         if nums[i] in num_map:
             return True
         num_map.add(nums[i])
         if len(num_map) > k:
             num_map.remove(nums[i - k])
-    print(num_map)
     return False
 
 

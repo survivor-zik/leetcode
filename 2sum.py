@@ -24,4 +24,3 @@ def twosum(num, t)->list:
 
 start = time.time()
 print(twosum(nums,target))
-print(time.time()-start)
