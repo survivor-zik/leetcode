@@ -5,28 +5,6 @@
 from collections import deque
 
 
-# def slidingwindowmax(nums: list, k: int) -> list:
-#     n_len = len(nums)
-#     if n_len <= 0 or k <= 0:
-#         return [0]
-#     answer = []
-#     queue = deque()
-#
-#     for i in range(n_len):
-#         if queue:
-#             if queue[0] < i - k:
-#                 queue.popleft()
-#
-#         while queue and nums[queue[-1]] <= nums[i]:
-#             queue.pop()
-#
-#         queue.append(i)
-#         if i >= k - 1:
-#             answer.append(nums[queue[0]])
-#
-#     return answer
-
-
 def slidingwindowmax(nums: list, k: int) -> list:
     answer = []
     queue = deque()
