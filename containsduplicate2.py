@@ -13,7 +13,7 @@ def containsNearbyDuplicate(nums, k: int) -> bool:
             return True
         num_map.add(nums[i])
         if len(num_map) > k:
-            num_map.remove(nums[i - k])
+            num_map.remove (nums[i - k])
     return False
 
 
