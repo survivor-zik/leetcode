@@ -12,4 +12,5 @@ def validpalindrome(s:str)->bool:
 
     return True
 
+
 print(validpalindrome("0P"))
